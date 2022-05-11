@@ -585,7 +585,8 @@ a li.header__nav--destacado{
 }
 .pilotobk {
 	margin-top: 20px;
-	margin-right: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
 	display: grid;
 	height: 320px;
 	width: 300px;
@@ -634,13 +635,26 @@ a li.header__nav--destacado{
 	.pilotobk {
 		width: 40%;
 		height: auto;
-		min-width: 150px;
+	
 	}
 	.pilotobk img{
 		width: 80%;
 	}
 	.equipoInstagram{
-		width: 95%;
+		width: 100%;
+		margin-top: 20px;
+		margin-left: 0px;
+	}
+}
+@media all and (max-width: 428px){
+	.pilotobk {
+		font-size: .7rem;
+		font-weight: 300;
+		min-width: none;
+	}
+	.mainBK {
+		font-weight: 300;
+		font-size: .7rem;
 	}
 }
 @media all and (min-width: 1330px){
