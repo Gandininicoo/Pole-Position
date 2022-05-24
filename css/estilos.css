@@ -235,6 +235,36 @@ a li.header__nav--destacado{
 		width: 90%;
 	}
 }
+@media all and (max-width: 576px){
+	.noticiaIndex{
+		height: auto;
+		margin: 10px 20px 0px;
+		grid-template-areas: 
+		"imagen . titulo"
+		;
+		align-content: center;
+	}
+	.noticiaIndex__Titulo{
+		font-size: 1.3rem;
+	}
+	.noticiaIndex__Imagen{
+		height: 90px;
+		width: 90px;
+		margin-top: .3rem;
+	}
+	.noticiaIndex__Body{
+		display: none;
+	}
+}
+@media all and (max-width: 430px){
+	.noticiaIndex__Titulo{
+		font-size: 1rem;
+	}
+	.noticiaIndex__Imagen{
+		height: 70px;
+		width: 70px;
+	}
+}
 /**NOTICIAS**/
 .noticiaBloque{
 	display: grid;
@@ -457,6 +487,7 @@ a li.header__nav--destacado{
 	.mundial--constructores p{
 		font-size: 1.5rem;
 	}
+}
 }
 /**EQUIPOS Y PILOTOS**/
 #bodyEquipos{
