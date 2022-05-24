@@ -329,8 +329,11 @@ a li.header__nav--destacado{
 	border-radius: 40px;
 	background-color: rgb(33, 41, 90);
 	height: auto;
+	width: 80%;
+	justify-self: center;
 	padding: 30px;
 	align-content: center;
+	justify-content: space-around;
 	grid-template-areas:
 	"titulo titulo"
 	"imagen info"
@@ -351,13 +354,13 @@ a li.header__nav--destacado{
 .granPremio__Imagen{
 	display: inline-block;
 	grid-area: imagen;
-
 }
 .granPremio__Informacion{
 	display: inline-block;
 	color: white;
 	text-align: left;
 	grid-area: info;
+	align-self: center;
 }
 .granPremio__Informacion td{
 	border: 1px solid white;
@@ -369,7 +372,8 @@ a li.header__nav--destacado{
 }
 @media all and (max-width: 1199px){
 	.granPremio{
-		padding: 10px;
+		width: 70%;
+		justify-content: center;
 		grid-template-areas:
 		"titulo "
 		"imagen "
@@ -378,10 +382,16 @@ a li.header__nav--destacado{
 		overflow-x: auto;
 	}
 	.granPremio__Informacion tr{
-		padding: 0rem 4rem;
+		width: 100%;
 		display:grid;
 		grid-template-columns: repeat(2, 1fr);
 	} 
+	.granPremio__Informacion{
+		justify-self: center;
+	}
+	.granPremio__Imagen{
+		width: 100%;
+	}
 }
 /**MUNDIAL**/
 .mundial--pilotos{
@@ -425,9 +435,11 @@ a li.header__nav--destacado{
 .tablas__mundial th.celeste{
 	background-color:#6c8dd9 ;
 }
+.tablas__mundial th.celeste.piloto{
+	padding: 0px 3.7em;
+	}
 .tablas__mundial td{
 	border: 1px solid white;
-	padding: 5px;
 	border-radius: 10px;
 	background-color:darkgrey ;
 	text-align: center;
