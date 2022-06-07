@@ -1,0 +1,93 @@
+.noticiaBloque{
+	display: grid;
+	grid-template-columns: repeat(12,1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-column: 1/13;
+	height: 200px;
+	background-color: black;
+	border: 4px solid black;
+	border-radius: 40px;
+	overflow: hidden;
+	margin: 20px;
+    text-decoration: none;
+    justify-self: center;
+    @media all and (min-width: 552px){
+        height: 300px;
+        width: 90%;
+    }
+    @media all and (min-width: 768px){
+        height: 360px;
+        width: 90%;
+    }
+    @media all and (min-width: 992px){
+        height: 500px;
+        width: 80%;
+    }
+    &__Imagen{
+        display: grid;
+        grid-column: 1/13;
+        grid-row: 1/6;
+        width: 100%;
+        -webkit-transition: .4s ease-in-out;
+        transition: .4s ease-in-out;
+    }
+    .noticiaBloque__Imagen:hover{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transition: .4s ease-in-out;
+        transition: .4s ease-in-out;
+    }
+    &__Titulo{
+        display: inline-block;
+        background-color: #000;
+        color: #fff;
+        @include sizeBg;
+        font-weight: 600;
+        width: 100%;
+        height: 4rem;
+        grid-column: 1/13;
+        grid-row: 5;
+        z-index: 1;
+        text-align: center;
+    }
+}
+.noticia__Cuerpo{
+	display: flex;
+	flex-direction: column;
+	grid-column: 1/13;
+	font-size: 1.1rem;
+	justify-content: center;
+    align-content: center;
+    @include sizeM ;
+    .texto{
+        width: 95%;
+        align-self: center;
+    }
+    .noticia__Titulo{
+        display: inline block;
+        color: rgb(33, 41, 90);
+        @include sizeBg ;
+        width: 90%;
+        text-align: center;
+        
+    }
+    .noticia__Imagen{
+        grid-column: 1/13;
+        width: 100%;
+    }
+    iframe{
+        width:  100%;
+        height: 200px;
+        align-self: center;
+        @media screen and (min-width:550px){
+            height: 350px;
+        }
+        @media screen and (min-width:768px){
+            height: 500px;
+        }
+        @media screen and (min-width:992px){
+            height: 600px;
+            width: 90%;
+        }
+    }
+}

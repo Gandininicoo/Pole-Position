@@ -1,0 +1,159 @@
+@each $f, $s in $fonts{
+	.font-#{$f}{
+		font-weight: $s;
+	}
+}
+#body{
+	display: grid;
+	margin-top: 60px;
+	padding-bottom: 50px;
+	min-height: 50vh;
+    height: auto;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto;
+    @media screen and (min-width:992px){
+        margin-top: 150px;
+    }
+}
+.proximoGranPremio{
+    align-self: center;
+    grid-column: 2/12;
+    @media screen and (min-width: 992px) {
+        grid-column: 2/6;
+        padding-right: 60px;
+    }
+}
+.bloqueNoticiaIndex{
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 450px;
+	border-radius: 20px;
+	grid-column: 2/12;
+	background-color: rgba(0,0,0,0);
+    justify-content: center;
+    @media screen and (min-width: 992px) {
+        grid-column: 6/12;
+        border: 2px solid #6c8dd9;
+        border-radius: 20px;
+        background-color: rgb(33, 41, 90);
+        max-height: 80vh;
+        overflow-y: scroll;
+	    overflow-x: hidden;
+        align-self: center;
+    }
+    .noticiaIndex{
+        display: grid;
+        width: 100%;
+        max-height: 200px;
+        padding: 10px 0px;
+        margin: 10px 0px;
+        border: 2px solid #6c8dd9;
+        border-radius: 20px;
+        background-color: rgb(33, 41, 90);
+        overflow-y: auto;
+        overflow-x: hidden;
+        grid-template-areas: 
+		    "titulo titulo titulo titulo"
+            "imagen noticia noticia noticia"
+            "imagen noticia noticia noticia"
+		;
+        @media screen and (min-width: 576px) {
+            grid-template-areas: 
+            "imagen . titulo titulo"
+            "imagen . noticia noticia"
+            "imagen . noticia noticia"
+            ;
+            width: 97%;
+        }
+        @media screen and (min-width: 768px) {
+            
+        }
+        @media screen and (min-width: 992px) {
+            
+        }
+    }
+    
+    &__Titulo{
+        display: grid;
+	    font-weight: 600;
+	    @include sizeM;
+        color: #fff;
+	    grid-area: titulo;
+        padding: .2em;
+    }
+    &__Body{
+        display: grid;
+	    font-weight: 300;
+	    @include sizeS;
+	    color: #fff;
+	    width: 90%;
+	    text-align: justify;
+	    grid-area: noticia;
+        @media screen and (min-width: 576px) {
+            display: grid;
+        }
+    }
+    &__Imagen{
+        display: grid;
+        height: 65px;
+        width: 65px;
+        margin: 0px 10px;
+        margin-top: 10px;
+        border-radius: 20px;
+        grid-area: imagen;
+        @media screen and (min-width: 576px){
+            height: 90px;
+            width: 90px;
+            margin: 0px 20px;
+            align-self: center;
+        }
+        @media screen and (min-width: 768px) {
+            height: 110px;
+            width: 110px;
+        }
+        @media screen and (min-width: 992px) {
+            height: 150px;
+            width: 150px;
+            margin: 0px 20px;
+            margin-top: 10px;
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+}
+.legal__Cuerpo{
+	display: flex;
+	flex-direction: column;
+	@include sizeS;
+	justify-content: center;
+	grid-column: 2/12;
+}
+.margenBlanco{
+    display: inline-block;
+    height: 25px;
+    width: 100%;
+    border: -1px solid white;
+    @media screen and (min-width:768px){
+        height: 40px;
+    }
+    @media screen and (min-width:992px){
+        font-size: 50px;
+    }
+}
+
+.en-cosntruccion{
+    margin-top: -150px;
+    padding: 150px 0px;
+    display: flex;
+    grid-column: 1/13;
+    background-color:#1f2858;
+    justify-content: center;
+    overflow: hidden;
+    img{
+        height: 100wv;
+        @media screen and (min-width: 576px){
+            height: 70wv;
+        }
+    }
+}

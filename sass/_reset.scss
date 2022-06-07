@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+ol, ul {
+	list-style: none;
+}
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: rgba(33, 41, 90, 0);
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+    border-radius: 10px;
+    background-color: rgba(33, 41, 90, 0);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #6c8dd9;
+    background-image: -webkit-linear-gradient(90deg,transparent,rgba(0, 0, 0, 0.4) 50%,transparent,transparent)
+}
+%grids12 {
+    display: grid;
+	grid-template-columns: repeat(12, 1fr) ;
+}

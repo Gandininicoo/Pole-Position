@@ -1,33 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Pole Position</title>
+	<title>CALENDARIO DE LA F1 | Pole Position</title>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<meta name="description" content="
+    Encontra en Pole Position el calendario completo de la formula 1 y la informacio de todos los grandes premios">
+	<link rel="shortcut icon" href="assets/pole-position2.svg" type="image/x-icon">
 </head>
 <body>
 	<header id="header">
-		<a href="index.html" class="header-logo-contenedor"><img src="assets/pole-position-logo.png" class="header-logo"></a>
-		<ul class="header__nav hidden-responsive-pequeño" >
-			<a href="noticias.html"><li>NOTICIAS</li></a>
-			<a href="calendario.html"><li class="header__nav--destacado">CALENDARIO</li></a>
-			<a href="mundial.html"><li>MUNDIAL</li></a>
-			<a href="equipos-pilotos.html"><li>EQUIPOS Y PILOTOS</li></a>
-		</ul>
-	</header>
-	<div id="body">
-		<div class="nav__pequeño hidden-responsive-grande">
+		<button class="menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-label="Menu"></button>
+		<a href="index.html" class="header-logo-contenedor"><img src="assets/pole-position.svg" class="header-logo" width="100%" alt="Pole Position"></a>
+		<nav class="header-nav hidden-responsive-pequeño">
 			<ul>
 				<a href="noticias.html"><li>NOTICIAS</li></a>
 				<a href="calendario.html"><li>CALENDARIO</li></a>
-				<a href="mundial.html"><li>MUNDIAL</li></a>
+				<a href="mundial.html"><li>MUNDIAL F1</li></a>
 				<a href="equipos-pilotos.html"><li>EQUIPOS Y PILOTOS</li></a>
-			</ul>	
-		</div>
+			</ul>
+		</nav>
+	</header>
+	<div id="body">
 			<div class="granPremio">
 				<p class="granPremio__Titulo">FECHA 1: BHARAIN</p>
-				<img class="granPremio__Imagen" src="assets/circuitos/bahrain.jpg">
+				<img class="granPremio__Imagen" src="assets/circuitos/bahrain.jpg" alt="circuito bahrain">
 				<table class="granPremio__Informacion">
 					<tr><th>Del</th><td>18 al 20 de marzo</td></tr>
 					<tr><th>VUELTAS</th><td>57</td></tr>
@@ -37,7 +35,7 @@
 			</div>
 			<div class="granPremio">
 				<p class="granPremio__Titulo">FECHA 2: ARABIA SAUDI</p>
-				<img class="granPremio__Imagen" src="assets/circuitos/arabia.jpg">
+				<img class="granPremio__Imagen" src="assets/circuitos/arabia.jpg" alt="circuito arabia saudita">
 				<table class="granPremio__Informacion">
 					<tr><th>Del</th><td>25 al 27 de marzo</td></tr>
 					<tr><th>VUELTAS</th><td>50</td></tr>
@@ -47,7 +45,7 @@
 			</div>
 			<div class="granPremio">
 				<p class="granPremio__Titulo">FECHA 3: AUSTRALIA</p>
-				<img class="granPremio__Imagen" src="assets/circuitos/australia.jpg">
+				<img class="granPremio__Imagen" src="assets/circuitos/australia.jpg" alt="circuito australia">
 				<table class="granPremio__Informacion">
 					<tr><th>Del</th><td>08 al 10 de abril</td></tr>
 					<tr><th>VUELTAS</th><td>58</td></tr>
@@ -57,7 +55,7 @@
 			</div>
 			<div class="granPremio">
 				<p class="granPremio__Titulo">FECHA 4: IMOLA</p>
-				<img class="granPremio__Imagen" src="assets/circuitos/imola.jpg">
+				<img class="granPremio__Imagen" src="assets/circuitos/imola.jpg" alt="circuito imola">
 				<table class="granPremio__Informacion">
 					<tr><th>Del</th><td>08 al 10 de abril</td></tr>
 					<tr><th>VUELTAS</th><td>63</td></tr>
@@ -67,7 +65,7 @@
 			</div>
 			<div class="granPremio">
 				<p class="granPremio__Titulo">FECHA 5: MIAMI</p>
-				<img class="granPremio__Imagen" src="assets/circuitos/miami.jpg">
+				<img class="granPremio__Imagen" src="assets/circuitos/miami.jpg" alt="circuito miami">
 				<table class="granPremio__Informacion">
 					<tr><th>Del</th><td>08 al 10 de abril</td></tr>
 					<tr><th>VUELTAS</th><td>58</td></tr>
@@ -94,5 +92,20 @@
 			</form>
 		</div>
 	</footer>
+	<!--UTILIDADES-->
+		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+			<div class="offcanvas-header">
+				<button type="button" class="menu-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<ul>
+					<a href="noticias.html"><li>NOTICIAS</li></a>
+					<a href="calendario.html"><li>CALENDARIO</li></a>
+					<a href="mundial.html"><li>MUNDIAL</li></a>
+					<a href="equipos-pilotos.html"><li>EQUIPOS Y PILOTOS</li></a>
+				</ul>
+			</div>
+		</div>
 </body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>

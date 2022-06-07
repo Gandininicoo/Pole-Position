@@ -1,94 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Pole Position</title>
+	<title>HOME | Pole Position</title>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<meta name="description" content="
+    Pole Position, tu lugar de encuentro con la f1. Donde encontraras las ultimas noticias; posiciones del mundial de f1; el calendario con los proximos grandes premios; informacion sobre equipos y pilotos y mucho mas">
+	<link rel="shortcut icon" href="assets/pole-position2.svg" type="image/x-icon">
 </head>
 <body>
 	<header id="header">
-		<a href="index.html" class="header-logo-contenedor"><img src="assets/pole-position-logo.png" class="header-logo"></a>
-		<ul class="header__nav hidden-responsive-pequeño" >
-			<a href="noticias.html"><li>NOTICIAS</li></a>
-			<a href="calendario.html"><li>CALENDARIO</li></a>
-			<a href="mundial.html"><li>MUNDIAL</li></a>
-			<a href="equipos-pilotos.html"><li>EQUIPOS Y PILOTOS</li></a>
-		</ul>
+		<button class="menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-label="Menu"></button>
+		<a href="index.html" class="header-logo-contenedor"><img src="assets/pole-position.svg" class="header-logo" width="100%" alt="Pole Position"></a>
+		<nav class="header-nav hidden-responsive-pequeño">
+			<ul>
+				<a href="noticias.html"><li>NOTICIAS</li></a>
+				<a href="calendario.html"><li>CALENDARIO</li></a>
+				<a href="mundial.html"><li>MUNDIAL F1</li></a>
+				<a href="equipos-pilotos.html"><li>EQUIPOS Y PILOTOS</li></a>
+			</ul>
+		</nav>
 	</header>
 	<div id="body">
-		<div class="nav__pequeño hidden-responsive-grande">
+		<section class="proximoGranPremio">
+			<a href="https://f1experiences.com/es-MX/2022-azerbaijan-grand-prix/" target="_blank">
+				<picture>
+					<source 
+						srcset="assets/baku-gp-s.jpg"
+						media="(max-width: 576px)"
+					/>
+					<source 
+						srcset="assets/baku-gp-m.jpg"
+						media="(max-width: 768px)"
+					/>          
+					<source 
+						srcset="assets/baku-gp-l.jpg"
+						media="(max-width: 992px)"
+					/>
+					<img 
+						src="assets/baku-gp-xl.jpg" 
+						alt="Man riding a downhill bike"
+						width="100%"
+					/>
+				</picture>	
+			</a>
+		</section>
+		<section class="bloqueNoticiaIndex">
+			<a href="noticias/verstappen-imola.html" class="noticiaIndex">
+				<img class="bloqueNoticiaIndex__Imagen" src="assets/noticias/max-imola-miniatura.jpg" alt="Max Verstappen">
+				<header class="bloqueNoticiaIndex__Titulo">
+					MAX SE QUEDO CON TODO EN IMOLA
+				</header>
+				<p class="bloqueNoticiaIndex__Body">
+					El piloto Neerlandes y actual campeon del mundo consiguio este fin de semana su segundo grand chelem en el gran premio de la emilia romagña tras un fin de semana para el recuerdo.
+				</p>
+			</a>
+			<a href="en-construccion.html" class="noticiaIndex">
+				<img class="bloqueNoticiaIndex__Imagen" src="assets/noticias/sainz-imola-miniatura.jpg" alt="Carlos Sainz y su monoplaza">
+				<header class="bloqueNoticiaIndex__Titulo">
+					SAINZ NO LEVANTA CABEZA
+				</header>
+				<p class="bloqueNoticiaIndex__Body">
+					Esta vez se toco con Ricciardo en la primera curva de la carrera y volvio a quedarse afuera de competencia por segundo gran premio consecutivo.
+				</p>
+			</a>
+			<a href="en-construccion.html" class="noticiaIndex">
+				<img class="bloqueNoticiaIndex__Imagen" src="assets/noticias/hamilton-imola-miniatura.jpg" alt="Lewis Hamilton corriendo en imola">
+				<header class="bloqueNoticiaIndex__Titulo">
+					HAMILTON SIGUE SIN RUMBO
+				</header>
+				<p class="bloqueNoticiaIndex__Body">
+					El heptacampeon mundial de f1 se paso todo el fin de semana luchando con su monoplaza que no paraba de rebotar en rectas y no subio del P13.
+				</p>
+			</a>
+			<a href="en-construccion.html" class="noticiaIndex">
+				<img class="bloqueNoticiaIndex__Imagen" src="assets/noticias/marko-miniatura.jpg" alt="Helmut Marko, representate de redbull">
+				<header class="bloqueNoticiaIndex__Titulo">
+					HELMUT DISPARO CONTRA HAMILTON
+				</header>
+				<p class="bloqueNoticiaIndex__Body">
+					Helmut Marko desato la polemica con una declaracion en tono ironico al ser preguntado por la actualidad de hamilton: "¡Quizás esté pensando en que debería haberse retirado el año pasado!"
+				</p>
+			</a>
+		</div>
+	</section>
+	<footer id="footer">
+		<h1 class="footer__declaracion font-s">Este sitio web no es oficial y no está asociado en ningún modo con el grupo de compañías de la Fórmula 1. F1, FORMULA ONE, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX y marcas relacionadas son marcas registradas de Formula One Licensing B.V. </h1>
+		<div class="footer__contenido font-s">
+			<p>Copyrigth © Nicolas Gandini Lopez - 2022 </p>
+		</div>
+		<div class="footer__contenido font-m">
+				<a href="legal.html">LEGAL</a>
+				<a href="mailto:nicolasgandinilopez@gmail.com" target="_blank">CONTACTANOS</a>
+				<a href="https://www.instagram.com/gndnico.21/" target="_blank">INSTAGRAM</a>
+		</div>
+		<div class="footer__contenido font-s">
+			<p>Recibi las ultimas noticias</p>
+			<form method="POST">
+				<input type="email" name="contacto" value="" class="email font-s" autocomplete="email" placeholder="Email" required="">
+				<button type="submit" class="email--button font-s"> > </button>
+			</form>
+		</div>
+	</footer>
+	
+	<!--UTILIDADES-->
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+		<div class="offcanvas-header">
+			<button type="button" class="menu-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
 			<ul>
 				<a href="noticias.html"><li>NOTICIAS</li></a>
 				<a href="calendario.html"><li>CALENDARIO</li></a>
 				<a href="mundial.html"><li>MUNDIAL</li></a>
 				<a href="equipos-pilotos.html"><li>EQUIPOS Y PILOTOS</li></a>
-			</ul>	
-		</div>
-		<div class="proximoGranPremio">
-			<a href="https://f1miamigp.com/" target="_blank">
-			<picture> 
-				<source srcset="assets/miami-gp-pequeño.jpg" media="(max-width: 1200px)">
-				<img srcset="assets/miami-gp.jpg" alt="proximo gran premio">
-			</picture>	
-			</a>
-		</div>
-		<div class="bloqueNoticiaIndex">
-			<a href="noticias/verstappen-imola.html" class="noticiaIndex">
-				<img class="noticiaIndex__Imagen" src="assets/noticias/max-imola-miniatura.jpg">
-				<p class="noticiaIndex__Titulo">
-					MAX SE QUEDO CON TODO EN IMOLA
-				</p>
-				<p class="noticiaIndex__Body">
-					El piloto Neerlandes y actual campeon del mundo consiguio este fin de semana su segundo grand chelem en el gran premio de la emilia romagña tras un fin de semana para el recuerdo.
-				</p>
-			</a>
-			<div class="noticiaIndex">
-				<img class="noticiaIndex__Imagen" src="assets/noticias/sainz-imola-miniatura.jpg">
-				<p class="noticiaIndex__Titulo">
-					SAINZ NO LEVANTA CABEZA
-				</p>
-				<p class="noticiaIndex__Body">
-					Esta vez se toco con Ricciardo en la primera curva de la carrera y volvio a quedarse afuera de competencia por segundo gran premio consecutivo. Se aumenta la diferencia con su compañero de equipo en la lucha por el mundial
-				</p>
-			</div>
-			<div class="noticiaIndex">
-				<img class="noticiaIndex__Imagen" src="assets/noticias/hamilton-imola-miniatura.jpg">
-				<p class="noticiaIndex__Titulo">
-					HAMILTON SIGUE SIN RUMBO
-				</p>
-				<p class="noticiaIndex__Body">
-					El heptacampeon mundial de f1 se paso todo el fin de semana luchando con su monoplaza que no paraba de rebotar en rectas. tuvo un buen primer stint pero despues de las paradas se quedo estancado detras de Gasly y no subio del P13
-				</p>
-			</div>
-			<div class="noticiaIndex">
-				<img class="noticiaIndex__Imagen" src="assets/noticias/marko-miniatura.jpg">
-				<p class="noticiaIndex__Titulo">
-					HELMUT DISPARO CONTRA HAMILTON
-				</p>
-				<p class="noticiaIndex__Body">
-					Helmut Marko, asesor de red bull. Desato la polemica con una declaracion en tono ironico al ser preguntado por la actualidad de hamilton: "Quiero decir, nosotros le doblamos. ¡Quizás esté pensando en que debería haberse retirado el año pasado!"
-				</p>
-			</div>
+			</ul>
 		</div>
 	</div>
-	<footer id="footer">
-		<p class="footer__declaracion">Este sitio web no es oficial y no está asociado en ningún modo con el grupo de compañías de la Fórmula 1. F1, FORMULA ONE, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX y marcas relacionadas son marcas registradas de Formula One Licensing B.V. </p>
-		<div class="footer__contenido">
-			<p>Copyrigth © Nicolas Gandini Lopez - 2022 </p>
-		</div>
-		<div class="footer__contenido">
-				<a href="legal.html">LEGAL</a>
-				<a href="mailto:nicolasgandinilopez@gmail.com" target="_blank">CONTACTANOS</a>
-				<a href="https://www.instagram.com/gndnico.21/" target="_blank">INSTAGRAM</a>
-		</div>
-		<div class="footer__contenido">
-			<p>Recibi las ultimas noticias</p>
-			<form method="POST">
-				<input type="email" name="contacto" value="" class="email" autocomplete="email" placeholder="Email" required="">
-				<button type="submit" class="email--button"> > </button>
-			</form>
-		</div>
-	</footer>
 </body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>

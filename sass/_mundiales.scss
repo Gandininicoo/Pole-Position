@@ -1,0 +1,59 @@
+.mundial--pilotos{
+	display: flex;
+	flex-direction: column;
+	grid-column: 1/13 ;
+	border: 2px solid #6c8dd9;
+	border-radius: 40px;
+	padding: 10px;
+	overflow: auto;
+	margin-bottom: 20px;
+    header{
+        color: #6c8dd9 ;
+        font-weight: 600;
+        @include sizeM;
+    }
+}
+.mundial--constructores{
+	display: flex;
+	flex-direction: column;
+	grid-column: 1/13 ;
+	border: 2px solid #6c8dd9;
+	border-radius: 40px;
+	padding: 10px;
+	overflow: auto;
+    header{
+        color: #6c8dd9 ;
+        font-weight: 600;
+        @include sizeM;
+    }
+}
+.tablas__mundial{
+    table{
+		@include sizeS;
+	}
+    th{
+        border: 1px solid white;
+        padding: 5px;
+        border-radius: 10px;
+        background-color:rgb(33, 41, 90) ;
+        text-align: center;
+        color: white;
+        @include sizeS;
+        &.celeste{
+            background-color:#6c8dd9 ;
+        }
+        &.celeste.piloto{
+            display: inline-flex;
+            min-width: 150px;
+            width: 92%;
+        }
+    }
+    td{
+        border: 1px solid white;
+        padding: 5px;
+        border-radius: 10px;
+        background-color:darkgrey ;
+        text-align: center;
+        @include sizeS;
+    }
+}

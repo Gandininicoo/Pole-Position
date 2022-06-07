@@ -1,32 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Pole Position</title>
+	<title>MUNDIALES DE F1 | Pole Position</title>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<meta name="description" content="
+    En Pole Position encontra las tablas de posiciones del mundial de piloto y de constructores de formula 1, ademas los resultados de todos los grandes premios">
+	<link rel="shortcut icon" href="assets/pole-position2.svg" type="image/x-icon">
 </head>
 <body>
 	<header id="header">
-		<a href="index.html" class="header-logo-contenedor"><img src="assets/pole-position-logo.png" class="header-logo"></a>
-		<ul class="header__nav hidden-responsive-pequeño" >
-			<a href="noticias.html"><li>NOTICIAS</li></a>
-			<a href="calendario.html"><li>CALENDARIO</li></a>
-			<a href="mundial.html"><li class="header__nav--destacado">MUNDIAL</li></a>
-			<a href="equipos-pilotos.html"><li>EQUIPOS Y PILOTOS</li></a>
-		</ul>
-	</header>
-	<div id="body">
-		<div class="nav__pequeño hidden-responsive-grande">
+		<button class="menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-label="Menu"></button>
+		<a href="index.html" class="header-logo-contenedor"><img src="assets/pole-position.svg" class="header-logo" width="100%" alt="Pole Position"></a>
+		<nav class="header-nav hidden-responsive-pequeño">
 			<ul>
 				<a href="noticias.html"><li>NOTICIAS</li></a>
 				<a href="calendario.html"><li>CALENDARIO</li></a>
-				<a href="mundial.html"><li>MUNDIAL</li></a>
+				<a href="mundial.html"><li>MUNDIAL F1</li></a>
 				<a href="equipos-pilotos.html"><li>EQUIPOS Y PILOTOS</li></a>
-			</ul>	
-		</div>
-		<div class="mundial--pilotos">
-			<p>MUNDIAL DE PILOTOS</p>
+			</ul>
+		</nav>
+	</header>
+	<div id="body">
+		<section class="mundial--pilotos">
+			<header>MUNDIAL DE PILOTOS</header>
 			<table class="tablas__mundial">
 				<tr><th> POS </th> <th class="celeste piloto"> PILOTO </th> <th class="celeste"> PUNTOS </th><th> BH </th><th> AS </th><th> AU </th><th> IT </th><th> US </th><th> ES </th><th> MN </th><th> AZ </th><th> CN </th><th> GB </th><th> AT </th><th> FR </th><th> HN </th><th> BL </th><th> PB </th><th> IT </th><th> SG </th><th> JP </th><th> US </th><th> MX </th><th> BR </th><th> AD </th></tr>
 
@@ -72,9 +70,9 @@
 
 				<tr><th>21</th> <td>Nicholas Latifi</td> <td>0</td> <td>16°</td><td>DNF</td><td>16°</td><td>16°</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 			</table>
-		</div>
-		<div class="mundial--constructores">
-			<p>MUNDIAL DE CONSTRUCTORES</p>
+		</section>
+		<section class="mundial--constructores">
+			<header>MUNDIAL DE CONSTRUCTORES</header>
 			<table class="tablas__mundial">
 				<tr><th> POS </th> <th class="celeste piloto"> EQUIPO </th> <th class="celeste"> PUNTOS </th><th> BH </th><th> AS </th><th> AU </th><th> IT </th><th> US </th><th> ES </th><th> MN </th><th> AZ </th><th> CN </th><th> GB </th><th> AT </th><th> FR </th><th> HN </th><th> BL </th><th> PB </th><th> IT </th><th> SG </th><th> JP </th><th> US </th><th> MX </th><th> BR </th><th> AD </th></tr>
 
@@ -98,25 +96,41 @@
 
 				<tr><th>10</th> <td>Williams</td> <td>1</td> <td>0</td><td>0</td><td>1</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 			</table>
-		</div>
+		</section>
 	</div>
 	<footer id="footer">
-		<p class="footer__declaracion">Este sitio web no es oficial y no está asociado en ningún modo con el grupo de compañías de la Fórmula 1. F1, FORMULA ONE, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX y marcas relacionadas son marcas registradas de Formula One Licensing B.V. </p>
-		<div class="footer__contenido">
+		<h1 class="footer__declaracion font-s">Este sitio web no es oficial y no está asociado en ningún modo con el grupo de compañías de la Fórmula 1. F1, FORMULA ONE, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX y marcas relacionadas son marcas registradas de Formula One Licensing B.V. </h1>
+		<div class="footer__contenido font-s">
 			<p>Copyrigth © Nicolas Gandini Lopez - 2022 </p>
 		</div>
-		<div class="footer__contenido">
+		<div class="footer__contenido font-m">
 				<a href="legal.html">LEGAL</a>
 				<a href="mailto:nicolasgandinilopez@gmail.com" target="_blank">CONTACTANOS</a>
 				<a href="https://www.instagram.com/gndnico.21/" target="_blank">INSTAGRAM</a>
 		</div>
-		<div class="footer__contenido">
+		<div class="footer__contenido font-s">
 			<p>Recibi las ultimas noticias</p>
 			<form method="POST">
-				<input type="email" name="contacto" value="" class="email" autocomplete="email" placeholder="Email" required="">
-				<button type="submit" class="email--button"> > </button>
+				<input type="email" name="contacto" value="" class="email font-s" autocomplete="email" placeholder="Email" required="">
+				<button type="submit" class="email--button font-s"> > </button>
 			</form>
 		</div>
 	</footer>
+	
+	<!--UTILIDADES-->
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+		<div class="offcanvas-header">
+			<button type="button" class="menu-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+			<ul>
+				<a href="noticias.html"><li>NOTICIAS</li></a>
+				<a href="calendario.html"><li>CALENDARIO</li></a>
+				<a href="mundial.html"><li>MUNDIAL</li></a>
+				<a href="equipos-pilotos.html"><li>EQUIPOS Y PILOTOS</li></a>
+			</ul>
+		</div>
+	</div>
 </body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>

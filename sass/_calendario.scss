@@ -1,0 +1,66 @@
+.granPremio{
+	display: grid;
+	grid-column: 1/13;
+    width: 85%;
+    justify-self: center;
+	border: 2px solid #fff ;
+	border-radius: 40px;
+	background-color: rgb(33, 41, 90);
+	height: auto;
+	padding: 30px;
+	align-content: center;
+	grid-template-areas:
+	"titulo titulo"
+	"imagen info"
+	;
+    @media all and (max-width: 768px){
+        padding: 10px;
+		grid-template-areas:
+		"titulo "
+		"imagen "
+		"info"
+		;
+		overflow-x: auto;
+        justify-content: center;
+    }
+	margin: 20px 0px;
+    &__Titulo{
+        display: inline-block;
+        border: 2px solid rgb(33, 41, 90);
+        border-radius: 20px;
+        background-color: #fff;
+        font-size: 20px;
+        color: rgb(33, 41, 90);
+        padding: 10px;
+        margin-bottom: 20px;
+        grid-area: titulo;
+        @include sizeM;
+        text-align: center;
+    }
+    &__Imagen{
+        display: inline-block;
+        grid-area: imagen;
+        width: 90%;
+        justify-self: center;
+    }
+    &__Informacion{
+        display: inline-block;
+        color: white;
+        text-align: left;
+        grid-area: info;
+        justify-self: center;
+        align-self: center;
+        @include sizeS;
+        td{
+            border: 1px solid white;
+            padding: 5px;
+            border-radius: 10px;
+            background-color:rgb(33, 41, 90) ;
+            text-align: center;
+            color: white;
+        }
+        @media all and (min-width: 992px){
+            @include sizeM;
+        }
+    }
+} 
