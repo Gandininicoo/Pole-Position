@@ -77,13 +77,16 @@
 	display: inline-flex;
 	grid-column: 1/13;
 	background-color: rgb(33, 41, 90);
-	border-radius: 20px;
+	border-radius: 0px;
 	padding: 5px;
-    min-height: 100wv;
+    min-height: 50vw;
+    justify-content: center;
+    align-content: center;
     .videoEquiposPilotosMain{
         display: inline-block;
-        border-radius: 40px;
+        border-radius: 20px;
         width:  100%;
+        max-width: 1200px;
         height: 100%;
         align-self: center;
         justify-self: center;
@@ -94,7 +97,7 @@
             height: 500px;
         }
         @media screen and (min-width:992px){
-            height: 600px;
+            height: 666.66666px;
         }
     }
 }

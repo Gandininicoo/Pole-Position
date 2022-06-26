@@ -7,6 +7,9 @@
 	padding: 10px;
 	overflow: auto;
 	margin-bottom: 20px;
+    @media screen and (min-width: 1024px ) {
+        margin: 20px;
+    }
     header{
         color: #6c8dd9 ;
         font-weight: 600;
@@ -21,6 +24,9 @@
 	border-radius: 40px;
 	padding: 10px;
 	overflow: auto;
+    @media screen and (min-width: 1024px ) {
+        margin: 20px;
+    }
     header{
         color: #6c8dd9 ;
         font-weight: 600;

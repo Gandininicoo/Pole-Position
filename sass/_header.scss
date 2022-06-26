@@ -53,20 +53,13 @@
             width: 70%;
             display: flex;
             justify-content: space-around;
-            a{
-                text-decoration: none;
-                li.header__nav--destacado{
-                    color: #6c8dd9 ;
-                    font-weight: 500;
-                }
-                :hover{
-                    background-color: #6c8dd9;
-                    color: rgb(33, 41, 90);
-                }
+            li.destacado{
+                background-color: #536591 ;
+                font-weight: 500;
             }
             li{
-                display: inline-block;
-                padding: 8px;
+                display: inline-flex;
+                height: 40px;
                 margin: 0px 5px;
                 border: 2px solid #fff;
                 background-color: rgb(33, 41, 90);
@@ -78,6 +71,21 @@
                 text-decoration: none;
                 box-sizing: border-box;
                 font-size: 1rem;
+                &:hover{
+                    background-color: #6c8dd9;
+                    color: rgb(33, 41, 90);
+                }
+                a{
+                    display: flex;
+                    text-decoration: none;
+                    color: #fff;
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    p{
+                        align-self: center;
+                    }
+                }
             }
         }
     }
@@ -138,18 +146,14 @@
             flex-direction: column;
             align-content: center;
             flex-wrap: wrap;
-            a{
-                text-decoration: none;
-                li.header__nav--destacado{
-                    color: #6c8dd9 ;
-                    font-weight: 500;
-                }
-            }
             li{
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                }
                 display: inline-block;
                 padding: 8px;
                 margin: 0px 5px;
-                color: #fff;
                 font-weight: 500;
                 width: 190px;
                 text-align: center;

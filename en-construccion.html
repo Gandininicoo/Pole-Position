@@ -15,10 +15,10 @@
 		<a href="index.html" class="header-logo-contenedor"><img src="assets/pole-position.svg" class="header-logo" width="100%" alt="Pole Position"></a>
 		<nav class="header-nav hidden-responsive-pequeño">
 			<ul>
-				<a href="noticias.html"><li>NOTICIAS</li></a>
-				<a href="calendario.html"><li>CALENDARIO</li></a>
-				<a href="mundial.html"><li>MUNDIAL F1</li></a>
-				<a href="equipos-pilotos.html"><li>EQUIPOS Y PILOTOS</li></a>
+				<li><a href="noticias.html"><p>NOTICIAS</p></a></li>
+				<li><a href="calendario.html"><p>CALENDARIO</p></a></li>
+				<li><a href="mundial.html"><p>MUNDIAL F1</p></a></li>
+				<li><a href="equipos-pilotos.html"><p>EQUIPOS Y PILOTOS</p></a></li>
 			</ul>
 		</nav>
 	</header>
@@ -28,7 +28,7 @@
 		</section>
 	</div>
 	<footer id="footer">
-		<h1 class="footer__declaracion font-s">Este sitio web no es oficial y no está asociado en ningún modo con el grupo de compañías de la Fórmula 1. F1, FORMULA ONE, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX y marcas relacionadas son marcas registradas de Formula One Licensing B.V. </h1>
+		<p class="footer__declaracion font-s">Este sitio web no es oficial y no está asociado en ningún modo con el grupo de compañías de la Fórmula 1. F1, FORMULA ONE, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX y marcas relacionadas son marcas registradas de Formula One Licensing B.V. </p>
 		<div class="footer__contenido font-s">
 			<p>Copyrigth © Nicolas Gandini Lopez - 2022 </p>
 		</div>
@@ -41,25 +41,37 @@
 			<p>Recibi las ultimas noticias</p>
 			<form method="POST">
 				<input type="email" name="contacto" value="" class="email font-s" autocomplete="email" placeholder="Email" required="">
-				<button type="submit" class="email--button font-s"> > </button>
+				<button type="button" class="email--button font-s" data-bs-toggle="modal" data-bs-target="#exampleModal"> > </button>
 			</form>
 		</div>
 	</footer>
 	
 	<!--UTILIDADES-->
+	<!--OFFCANVAS-->
 	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
 		<div class="offcanvas-header">
 			<button type="button" class="menu-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 		</div>
 		<div class="offcanvas-body">
 			<ul>
-				<a href="noticias.html"><li>NOTICIAS</li></a>
-				<a href="calendario.html"><li>CALENDARIO</li></a>
-				<a href="mundial.html"><li>MUNDIAL</li></a>
-				<a href="equipos-pilotos.html"><li>EQUIPOS Y PILOTOS</li></a>
+				<li><a href="noticias.html">NOTICIAS</a></li>
+				<li><a href="calendario.html">CALENDARIO</a></li>
+				<li><a href="mundial.html">MUNDIAL</a></li>
+				<li><a href="equipos-pilotos.html">EQUIPOS Y PILOTOS</a></li>
 			</ul>
 		</div>
 	</div>
-</body>
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<p class="modal-title font-m" id="exampleModalLabel">Gracias por unirte</p>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		</div>
+		</div>
+	</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
 </html>

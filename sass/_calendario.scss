@@ -2,6 +2,7 @@
 	display: grid;
 	grid-column: 1/13;
     width: 85%;
+    max-width: 1000px;
     justify-self: center;
 	border: 2px solid #fff ;
 	border-radius: 40px;
@@ -13,7 +14,7 @@
 	"titulo titulo"
 	"imagen info"
 	;
-    @media all and (max-width: 768px){
+    @media all and (max-width: 576px){
         padding: 10px;
 		grid-template-areas:
 		"titulo "
@@ -58,6 +59,9 @@
             background-color:rgb(33, 41, 90) ;
             text-align: center;
             color: white;
+        }
+        @media all and (max-width: 576px){
+            padding: 20px;
         }
         @media all and (min-width: 992px){
             @include sizeM;
